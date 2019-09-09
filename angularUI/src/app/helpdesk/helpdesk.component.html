@@ -1,0 +1,40 @@
+
+<div class="logo">
+    <img src="" alt="Logo" width="100px" height="80px">
+    
+    <h1>HELP DESK</h1>
+</div>
+<section>
+  <form class="example-form">
+    
+      <table class="example-full-width" cellspacing="0"><tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput #firstName placeholder="First name">
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <input matInput #lastName placeholder="Last Name">
+        </mat-form-field></td>
+      </tr></table>
+
+      <mat-form-field class="example-full-width">
+        <span matPrefix>+91 &nbsp;</span>
+        <input type="tel" matInput #phoneNo placeholder="Telephone">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput #emailId placeholder="Enter your email" required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input matInput #message maxlength="256" placeholder="Message">
+        <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+      </mat-form-field>
+      
+      <div class="button-row">
+        <button mat-raised-button (click)="notification()" selected [routerLink]="['/landing']">Submit</button>
+      </div>
+  </form>
+</section>

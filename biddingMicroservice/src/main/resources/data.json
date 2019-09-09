@@ -1,0 +1,18 @@
+{
+  "itemId":1,
+  "itemName":"iPhone",
+  "itemDescription":"nice Product",
+  "itemCategory":"Smart Phone",
+  "itemQuality":"medium",
+  "numberOfDaysForRent":15,
+  "itemBaseRent":250.00,
+  "minimumBiddingAmount":250.00,
+  "timeLeft":2,
+  "latestBid":250.00,
+  "userEmailId":"ua007",
+  "userName":"utkarsh",
+  "userPhoneNumber":8704347032,
+  "bidderEmailId":"adp",
+  "biddername":"adit",
+  "bidderPhoneNumber":340213473
+}

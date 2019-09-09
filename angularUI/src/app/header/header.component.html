@@ -1,0 +1,49 @@
+<header>
+    <nav class="navbar">
+      <mat-toolbar >
+        <mat-toolbar-row >  
+                <div class="navbar-header">  
+                        <img src="./assets/auctionlogo.png" class="img-rounded" alt="auction-logo" width="50px" height="50px">
+                    </div>
+            
+          <span id="branding" [routerLink]="['/landing']">e-Auction</span>
+
+            <section class="search-center">
+                <mat-form-field appearance="standard" class="searchbox">
+                    <mat-label>Search</mat-label>
+                    <input matInput placeholder="what are you looking for" (input)="clickSearch($event.target.value)">
+                    <mat-icon matSuffix>search</mat-icon>
+                    
+                </mat-form-field>
+            </section>
+
+          <section class="txt-center">
+
+            <mat-chip-list>
+              <mat-chip  class="navLinks" selected [routerLink]="['/helpdesk']" >HelpDesk</mat-chip>
+              <mat-icon class="pipes">remove</mat-icon>
+              <mat-chip  class="navLinks" selected [routerLink]="['/login']">Login/SignUp</mat-chip>
+            </mat-chip-list>
+
+          </section>
+
+        </mat-toolbar-row></mat-toolbar>
+
+        <mat-toolbar class="secondnav">
+
+                <mat-toolbar-row >
+                <button class="category" mat-button [matMenuTriggerFor]="menu">Categories</button>
+                <mat-menu #menu="matMenu">
+                <button mat-menu-item>Car & Bike</button>
+                <button mat-menu-item>Jewellery</button>
+                <button mat-menu-item>Artifacts</button>
+                <button mat-menu-item>Electronics</button>
+             </mat-menu>
+             <button class="recommend" mat-button  selected [routerLink]="['/recommendations']">My Recommendations</button>
+             <button class="recommend" mat-button routerLink='/favs'>Wishlist</button>
+                </mat-toolbar-row>
+      </mat-toolbar>
+    </nav>
+</header>
+
+  

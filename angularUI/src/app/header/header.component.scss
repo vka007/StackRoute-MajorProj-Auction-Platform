@@ -1,0 +1,104 @@
+#branding {
+    font-size: 25px;
+    cursor: progress;
+    padding-left: 10px;
+    color: black;
+}
+
+.navbar-header
+{
+    margin-top: auto;
+   
+}
+
+.navbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.txt-center {
+    padding-left: 200px;
+}
+
+.search-center
+{
+    padding-left: 200px;
+    margin: auto;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.secondnav
+{   color: white;
+    background-color: black;
+    height: 2px;
+   
+    
+}
+
+.nav{
+    max-height: 20px;
+    min-height: 10px;
+}
+
+.category{
+    font-size: 20px;
+}
+
+.recommend
+{
+    font-size: 20px; 
+}
+
+.searchbox {
+    width: 100%;
+  }
+
+.span1{
+    padding-right: 20px;
+}
+
+.navLinks {
+    font-size: 1.00rem;
+    cursor: pointer;
+}
+
+mat-chip {
+    padding: 1.25rem;
+}
+
+.pipes {
+    transform: rotate(90deg);
+    padding: 0%;
+    margin: 0%;
+}
+
+mat-chip:hover {
+    box-shadow: 2.5px 5p black;
+}
+
+mat-form-field {
+    font-size: 15px;
+    margin: auto;
+    color: black;
+       
+}
+
+mat-form-field-appearance{
+    border-block-color:black;
+}
+
+mat-form-field > input{
+    border-radius: 10px;
+}
+
+mat-toolbar{
+    background-color: white;
+}
+
+

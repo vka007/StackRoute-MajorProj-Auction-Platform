@@ -1,0 +1,19 @@
+<br><br><br><br><br><br><br>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="1%" fxLayoutAlign.xs="center center" fxLayoutWrap>
+    <mat-card class="item-card" fxFlexOrder.lt-md="4" *ngFor="let product of arrayOfProducts">
+          
+            <mat-card-header class="contents">
+                <mat-card-title  class="contents">Name:{{product.name}}</mat-card-title><br> 
+             <mat-card-subtitle  class="contents"> Owner:{{product.owner}}</mat-card-subtitle>
+        <mat-card-subtitle  class="contents"> Description:{{product.des}}</mat-card-subtitle>
+       
+              </mat-card-header>
+              <img mat-card-image class="img" src="../../../assets/recommend.jpg">
+            <mat-card-actions>
+  
+      <button mat-button (click)=addToWishList(product)>Add to Wishlist <mat-icon>favorite</mat-icon></button>
+                
+            </mat-card-actions>
+          
+          </mat-card>
+        </div>

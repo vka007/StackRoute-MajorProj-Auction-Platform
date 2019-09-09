@@ -1,0 +1,43 @@
+
+<!--############################################################################3-->
+<section class="card">
+
+    <mat-card class="item-card" >
+      <mat-card-header>
+        
+      </mat-card-header>
+    
+        <mat-card-content >
+    
+          <span class="contents">Fill the Details</span>
+            <div class="example-container">
+    
+                <mat-form-field>
+                  <input matInput #username placeholder="Enter your email *">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput #password placeholder="Enter your password *" [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" >
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+    
+                
+                      </div>
+    
+        <button mat-raised-button class="Submit" (click)="checkLogin(username.value, password.value)" >Login</button>
+
+        <div>
+
+        <button mat-raised-button class="newbutton" selected [routerLink]="['/registration']">Create new Account</button>
+        <button mat-raised-button class="newbutton" selected [routerLink]="['/forgot']">Forgot Password</button>
+
+        </div>
+    
+      </mat-card-content>
+     
+    </mat-card>
+    
+    
+    </section>
+          

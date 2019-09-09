@@ -1,0 +1,50 @@
+.item-card {
+    margin: 15px;
+    max-width: 250px;
+    max-height: 350px;
+    width: 250px;
+    height: 600px;
+    align-items: center;
+    background-color: rgb(194, 211, 243); 
+    position: static;  
+  
+     
+}
+
+.item-card:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+button {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.d-none {
+    display: none;
+}
+
+button:hover {
+    box-shadow: 5px 5px black;
+}
+
+.contents
+{
+    color: black;
+    
+}
+
+h3{
+    color: black
+}
+
+.card{
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+}
+.img
+{
+    height: 180px;
+    width: 200px;
+}

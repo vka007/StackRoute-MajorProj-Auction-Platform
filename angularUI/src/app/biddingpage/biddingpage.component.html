@@ -1,0 +1,62 @@
+
+<!--############################################################################3-->
+<section class="card">
+  <mat-card class="item-card1" >
+          <mat-card-header>
+                 
+          </mat-card-header>
+  
+            <mat-card-content >
+              <h3 align="center">Owner: {{item.userName}}</h3>
+              <h3 align="center">{{item.userEmailId}}</h3>
+  
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+              
+              <h3>Item Id: {{item.itemId}}</h3>
+              <h3>Item Name: {{item.itemName}}</h3>
+  
+          </mat-card-content>
+         
+  </mat-card>
+  
+  <mat-card class="item-card2" >
+    <mat-card-header>
+      
+    </mat-card-header>
+  
+      <mat-card-content >
+        <p align="left"><strong>Description: </strong>{{item.itemDescription}}</p>
+        <p align="left"><strong>Item Category: </strong>{{item.itemCategory}}</p>
+        <p align="left"><strong>Item Quantity: </strong>{{item.Quality}}</p>
+        <p align="left"><strong>Duration for Rent: </strong>{{item.numberOfDaysForRent}} Months</p>
+        <p align="left"><strong>Base Rent: Rs</strong>{{item.itemBaseRent}}</p>
+        <p align="left"><strong>Minimum Bid Amount: Rs</strong>{{item.minimumBiddingAmount}}</p>
+        <p align="left"><strong>Current Bid Amount: Rs</strong>{{item.latestBid}}</p>
+        <p align="left"><strong>Time Left to bid: </strong>7 Days(demo)</p>
+        <p align="left">----------------------------------------------------------</p>
+      <div class="form-field" align="left">  <strong>Your Bid: </strong>
+        
+        <mat-form-field>
+            <input matInput #yourBidInput placeholder="Amount" type="number" class="example-right-align" class="form-field">
+            <span matPrefix>$&nbsp;</span>
+            <span matSuffix>.00</span>
+          </mat-form-field>
+      </div>
+  
+      <div class="form-field" align="left">  <strong>No. of Days: </strong>
+        
+        <mat-form-field>
+            <input matInput #yourRentInput placeholder="Days" type="number" class="example-right-align" class="form-field">
+            <span matSuffix>Days</span>
+          </mat-form-field>
+      </div>
+  
+      <button class="bidbutton" mat-raised-button (click)="itemUpdater(yourBidInput.value, yourRentInput.value)">BID!</button>
+  
+    </mat-card-content>
+   
+  </mat-card>
+  
+  
+  </section>
+        
