@@ -6,8 +6,10 @@
     height: 470px;
     align-items: center;
     background-color: rgb(50, 162, 190); 
-    position: static;    
+    position: static;  
+    
 }
+
 
 .mat-radio-button ~ .mat-radio-button {
     margin-left: 16px;
@@ -76,7 +78,7 @@ button:hover {
 
 .card-container {
     flex-wrap: wrap;
-    padding-top: 125px;
+    padding-top: 25px;
     padding-left: 75px;
 }
 
@@ -84,7 +86,7 @@ button:hover {
 .card{
     display: inline-flex;
     flex-wrap: wrap;
-    padding-top: 125px;
+    padding-top: 30px;
     padding-left: 545px;
     align-content: center;
    

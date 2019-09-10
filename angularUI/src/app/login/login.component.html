@@ -1,5 +1,16 @@
 
 <!--############################################################################3-->
+<nav class="navbar">
+  <mat-toolbar >
+    <mat-toolbar-row >  
+            <div class="navbar-header">  
+                    <img src="./assets/auctionlogo.png" class="img-rounded" alt="auction-logo" width="50px" height="50px">
+                </div>
+        
+      <span id="branding" [routerLink]="['/landing']">e-Auction</span>
+    </mat-toolbar-row>
+    </mat-toolbar>
+</nav>
 <section class="card">
 
     <mat-card class="item-card" >
@@ -21,19 +32,19 @@
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </button>
                   </mat-form-field>
-    
-                
                       </div>
     
         <button mat-raised-button class="Submit" (click)="checkLogin(username.value, password.value)" >Login</button>
-
+        <!-- <button mat-raised-button class="Submit" (click)="sendMessage()" >send</button> -->
+          
         <div>
 
         <button mat-raised-button class="newbutton" selected [routerLink]="['/registration']">Create new Account</button>
         <button mat-raised-button class="newbutton" selected [routerLink]="['/forgot']">Forgot Password</button>
 
         </div>
-    
+        
+  
       </mat-card-content>
      
     </mat-card>

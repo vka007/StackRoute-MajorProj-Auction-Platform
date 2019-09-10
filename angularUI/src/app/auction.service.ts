@@ -29,7 +29,8 @@ export class AuctionService {
 
  getRecommendList()
  { 
-   var url='http://172.23.238.180:8081/api/v1/userrcm';
+   var url='http://172.23.238.180:8081/api/v1/userrcm'
   return this.httpclient.get(url);
  }
+ 
 }

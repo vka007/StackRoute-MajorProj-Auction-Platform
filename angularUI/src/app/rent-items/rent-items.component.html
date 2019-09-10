@@ -1,0 +1,49 @@
+<nav class="navbar">
+   <mat-toolbar >
+     <mat-toolbar-row >  
+             <div class="navbar-header">  
+                     <img src="./assets/auctionlogo.png" class="img-rounded" alt="auction-logo" width="50px" height="50px">
+                 </div>
+         
+       <span id="branding" [routerLink]="['/landing']">e-Auction</span>
+     </mat-toolbar-row>
+     </mat-toolbar>
+ </nav>
+
+<div class="center">
+    <mat-toolbar>
+        <span id="header">Tell us what you want to rent</span>
+    </mat-toolbar>
+      <mat-card class="my-card">
+        <mat-card-content>
+            <form class="my-form">
+               <mat-form-field class="full-width">
+                      <mat-label>Name of the Product</mat-label>
+                      <input [(ngModel)]="product.itemName"  matInput  placeholder="Name of the Product"  name="name" type="text" required>
+                   </mat-form-field>
+                   <mat-form-field class="full-width">
+                      <mat-label>Quantity</mat-label>
+                      <input [(ngModel)]="product.itemQuantity" matInput  placeholder="Quantity" name="quantity" type="number" required>
+                   </mat-form-field>
+                   <mat-form-field class="full-width">
+                      <mat-label>Rent Period</mat-label>
+                      <input [(ngModel)]="product.itemDurationOfRent" matInput  placeholder="Rent Period"  name="rentperiod" type="text" required>
+                   </mat-form-field>
+                   
+                 <mat-form-field class="full-width">
+                    <mat-label>Best Value Price </mat-label>
+                    <input [(ngModel)]="product.baseRent" matInput  placeholder="Best Value Price" name="bestvalueprice" type="number"  required>
+                 </mat-form-field>
+            </form>
+        </mat-card-content>
+    <mat-card-actions>
+        <mat-label>Upload Images</mat-label>
+            <button mat-raised-button (click)="chooseFile()" color="primary">Choose file</button>
+            <button mat-raised-button (click)="uploadFile()" color="primary">Upload file</button>
+            <br>
+            <br>
+            <button mat-raised-button (click)="confirmAndRent()" color="primary">Confirm And Rent</button>
+         </mat-card-actions>
+      </mat-card>
+      </div>
+    

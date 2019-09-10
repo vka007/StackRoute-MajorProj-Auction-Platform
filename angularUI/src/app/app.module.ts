@@ -19,7 +19,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { SearchComponent } from './search/search.component';
 import { ForgotComponent } from './forgot/forgot.component';
-import { BiddingpageComponent } from './biddingpage/biddingpage.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BeforeloginComponent } from './beforelogin/beforelogin.component';
+import { RentItemsComponent } from './rent-items/rent-items.component';
 // import { FormsModule } from '@angular/forms';
 
 
@@ -38,7 +40,8 @@ import { BiddingpageComponent } from './biddingpage/biddingpage.component';
     WishlistComponent,
     SearchComponent,
     ForgotComponent,
-    BiddingpageComponent
+    BeforeloginComponent,
+    RentItemsComponent
     
   ],
   imports: [
@@ -48,6 +51,8 @@ import { BiddingpageComponent } from './biddingpage/biddingpage.component';
     MaterialModule,
     HttpClientModule,
     FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
     // FormsModule
   ],
   providers: [],

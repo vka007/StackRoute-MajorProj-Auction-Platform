@@ -1,9 +1,17 @@
-
-<div class="logo">
-    <img src="" alt="Logo" width="100px" height="80px">
+<nav class="navbar">
+  <mat-toolbar >
+    <mat-toolbar-row >  
+            <div class="navbar-header">  
+                    <img src="./assets/auctionlogo.png" class="img-rounded" alt="auction-logo" width="50px" height="50px">
+                </div>
+        
+      <span id="branding" [routerLink]="['/landing']">e-Auction</span>
+    </mat-toolbar-row>
+    </mat-toolbar>
+</nav>
     
     <h1>HELP DESK</h1>
-</div>
+
 <section>
   <form class="example-form">
     
@@ -34,7 +42,7 @@
       </mat-form-field>
       
       <div class="button-row">
-        <button mat-raised-button (click)="notification()" selected [routerLink]="['/landing']">Submit</button>
+        <button mat-raised-button (click)="notification()" class="submit" selected [routerLink]="['/landing']">Submit</button>
       </div>
   </form>
 </section>

@@ -1,69 +1,65 @@
 
 <!--############################################################################3-->
-<section class="card">
-
-    <mat-card class="item-card" >
-      <mat-card-header>
+<nav class="navbar">
+  <mat-toolbar >
+    <mat-toolbar-row >  
+            <div class="navbar-header">  
+                    <img src="./assets/auctionlogo.png" class="img-rounded" alt="auction-logo" width="50px" height="50px">
+                </div>
         
-      </mat-card-header>
-    
+      <span id="branding" [routerLink]="['/landing']">e-Auction</span>
+    </mat-toolbar-row>
+    </mat-toolbar>
+</nav>
+<section class="card">
+    <mat-card class="item-card" >
+
         <mat-card-content >
+          <form class="my-form" [formGroup]="registerForm">
     
           <span class="contents">Fill the Details</span>
             <div class="example-container">
     
                 <mat-form-field>
-                    <input matInput placeholder="Enter your Full Name *">
+                    <input matInput placeholder="Enter your Full Name *" formControlName="userName">
                   </mat-form-field>
     
                 <mat-form-field>
-                  <input matInput placeholder="Enter your email *">
+                  <input matInput placeholder="Enter your email *" formControlName="userEmail">
                 </mat-form-field>
     
                 <mat-form-field>
-                    <input matInput placeholder="Enter your password *" [type]="hide ? 'password' : 'text'">
+                    <input matInput placeholder="Enter your password *" formControlName="userPassword" [type]="hide ? 'password' : 'text'">
                     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </button>
                   </mat-form-field>
     
                   <mat-form-field>
-                    <input matInput placeholder="Enter your Phone Number *" pattern="number">
+                    <input matInput placeholder="Enter your Phone Number *" formControlName="PhoneNumber" pattern="number">
                   </mat-form-field>
     
                   <mat-form-field>
-                      <input matInput placeholder="Enter your Aadhar Number *">
+                      <input matInput placeholder="Enter your Aadhar Number *" formControlName="AadharNumber">
                     </mat-form-field>
                     <div>
                     <label>Gender: </label>
-                    <mat-radio-group formControlName="floatLabel">
-                      <mat-radio-button value="auto">Male</mat-radio-button>
-                      <mat-radio-button value="always">Female</mat-radio-button>
+                    <mat-radio-group formControlName="userGender">
+                      <mat-radio-button value="Male" >Male</mat-radio-button>
+                      <mat-radio-button  value="female">Female</mat-radio-button>
                     </mat-radio-group>
                     <span></span>
                       </div>
-                      <div>
-                    <section class="catsection">
-                        <span align="left">Categories: </span>
-                        <mat-checkbox class="example-margin" >Electronics</mat-checkbox>
-                        <mat-checkbox class="example-margin" >Car & Bike</mat-checkbox>
-                        <mat-checkbox class="example-margin" >Jewellery</mat-checkbox>
-                        <mat-checkbox class="example-margin" >Artifacts</mat-checkbox>
-                        <mat-checkbox class="example-margin" >Fashion</mat-checkbox>
-                        <mat-checkbox class="example-margin" >Antique</mat-checkbox>
-                      </section>
-                    </div>
-                 
-    
+                    <mat-form-field>
+            <mat-label>Category</mat-label>
+            <mat-select placeholder="Category" multiple name="category"formControlName="category" >
+              <mat-option *ngFor="let category of categoryList" value="{{category}}">{{category}} </mat-option>
+            </mat-select>
+          </mat-form-field>
                       </div>
-    
-        <button mat-raised-button class="submit" class="center" selected [routerLink]="['/login']">Submit</button>
-    
+        <button mat-raised-button class="submit" (click)="registeredUser()" class="center" selected [routerLink]="['/login']">Submit</button>
+          </form>
       </mat-card-content>
-     
     </mat-card>
-    
-    
-  
     </section>
           

@@ -7,6 +7,8 @@ import {
   MatGridListModule,
   MatTableModule,
   MatTooltipModule,
+  MatOptionModule,
+  MatSelectModule,
 } from '@angular/material';
 
 import { NgModule } from '@angular/core';
@@ -16,7 +18,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
 
 @NgModule({
  
@@ -34,7 +35,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatMenuModule, 
     MatDialogModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatOptionModule,
+    MatSelectModule,
   ],
   exports: [MatButtonModule,
     MatCheckboxModule,
@@ -49,7 +52,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   MatMenuModule, 
   MatDialogModule,
   MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatOptionModule,
+    MatSelectModule,
 ]
 })
 export class MaterialModule { }

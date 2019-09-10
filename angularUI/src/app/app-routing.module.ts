@@ -9,7 +9,7 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
 import {WishlistComponent} from './wishlist/wishlist.component';
 import { SearchComponent } from './search/search.component';
 import { ForgotComponent } from './forgot/forgot.component';
-import { BiddingpageComponent } from './biddingpage/biddingpage.component';
+import { RentItemsComponent } from './rent-items/rent-items.component';
 
 const routes: Routes = [
   {path:'',pathMatch:'full',redirectTo:'/app-home'},
@@ -32,8 +32,10 @@ const routes: Routes = [
      component: WishlistComponent
   },
   { path: 'search/:value', component: SearchComponent },
-  { path: 'forgot', component:ForgotComponent},
-  {path:'bidding',component:BiddingpageComponent}
+  { path: 'forgot', component:ForgotComponent}, 
+   {path: 'rentItems', component:RentItemsComponent},
+
+
 
 ];
 
