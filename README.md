@@ -1,5 +1,4 @@
-# Team 4
-## Product: Second Hand Product Auction Platform 
+## Product: Rental based E-Auction Platform 
 ## Description:
 1.  People fantasy about having rare and antique things,but due to several odd reasons their dream of hoarding things remains unfulfilled.For example, if you are a Cricket Fan and you love Sachin's Batting Style, you would definitely love to have a Bat personally signed by the Master-Blaster himself.
 2.  So,this Second Hand Product Auction Platform is one such platform where privileged people who feel like putting up their products for auction can easily do so.And the good part is,on this platform, the range doesn't matter you can place any product for auction.
