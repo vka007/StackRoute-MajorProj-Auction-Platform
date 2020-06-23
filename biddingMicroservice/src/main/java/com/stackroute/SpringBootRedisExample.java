@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 
 @SpringBootApplication
 public class SpringBootRedisExample {
-
+	//BEAN CREATION
 	@Bean
 	JedisConnectionFactory jedisConnectionFactory(){
 		return new JedisConnectionFactory();
